@@ -1,6 +1,6 @@
 {
   "name": "react-fgql",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "react-fgql is a HOC for integration [fgql](https://github.com/hamavb/fgql) into react application.",
   "main": "lib/react-fgql.js",
   "scripts": {
