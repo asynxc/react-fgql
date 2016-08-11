@@ -1,8 +1,8 @@
 {
   "name": "react-fgql",
   "version": "1.0.0",
-  "description": "react-fgql is a HOC for integration [fgql][https://github.com/hamavb/fgql] into react application.",
-  "main": "src/react-fgql.js",
+  "description": "react-fgql is a HOC for integration [fgql](https://github.com/hamavb/fgql) into react application.",
+  "main": "lib/react-fgql.js",
   "scripts": {
     "clean": "rimraf lib && mkdir lib",
     "build": "npm run clean && webpack --mode=build",
