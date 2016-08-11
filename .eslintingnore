@@ -1,0 +1,5 @@
+node_modules/**
+lib/**
+examples/**
+*.spec.js
+src/index.html
