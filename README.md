@@ -1,6 +1,6 @@
 # react-fgql
 
-react-fgql is a [HoC][https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e#.9tw4hybaz] for integration [fgql][https://github.com/hamavb/fgql] into react application
+react-fgql is a [HoC](https://medium.com/@franleplant/react-higher-order-components-in-depth-cf9032ee6c3e#.9tw4hybaz) for integration [fgql](https://github.com/hamavb/fgql) into react application
 
 react-fgql is umd (Universal Module Definition) library.
 
@@ -10,14 +10,14 @@ react-fgql is umd (Universal Module Definition) library.
 
 ## Dependencies
 
-react-fgql depend on [fgql][https://github.com/hamavb/fgql] to interact with single or multiple graphql endpoint.
+react-fgql depend on [fgql](https://github.com/hamavb/fgql) to interact with single or multiple graphql endpoint.
 So you have to install `fgql` module.
 
 `npm install --save fgql`
 
 ## API :
 
-react-fgql take care of instantiating [fgql][https://github.com/hamavb/fgql] and manage single or multiple queries for the warped component.
+react-fgql take care of instantiating [fgql](https://github.com/hamavb/fgql) and manage single or multiple queries for the warped component.
 it allow you to declaratively define multiple queries and related data processing. Then deliver required data and states as props.
 
 
@@ -25,7 +25,7 @@ react-fgl expose one class `createContainer`.
 
 ### `QueryObject`
 
-`QueryObject` is a class of [fgql][https://github.com/hamavb/fgql] module.
+`QueryObject` is a class of [fgql](https://github.com/hamavb/fgql) module.
 a couple options `autoFetch` and `mapDataToProps` are added to `QueryObject` that are **react-fgql** specifics.
 also regular `fetchInterval` parameter can be a function that return a number.
 if `fetchInterval` value is greater then 0, **react-fgql** starts fetching immediatly and sequentially each X ms when HoC is mounted. 
@@ -65,11 +65,11 @@ Parameters Table :
 | endPoint		    | ?instanceof EndPoint	                                                      |  undefined            |
 
 
-`Queries` is a plain object. each key is a `QueryObject` type of [fgql][https://github.com/hamavb/fgql] modules.
+`Queries` is a plain object. each key is a `QueryObject` type of [fgql](https://github.com/hamavb/fgql) modules.
 
 `Component` is the target component. can be either a React Component or a function that return a React Component.
 
-`endPoint` is a regular `EndPoint` instance of [fgql][https://github.com/hamavb/fgql] modules. 
+`endPoint` is a regular `EndPoint` instance of [fgql](https://github.com/hamavb/fgql) modules. 
 each `QueryObject` can have an endPoint parameter, if none is provided, this one is used.
 
 
