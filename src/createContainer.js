@@ -59,7 +59,7 @@ export default function createContainer (Queries, Component, endPoint) {
 
 		autoFetch () {
 			forEach(this.QueryObejcts,
-				(_q) => _q._fetchInterval() && _q.autoFetch(() => ({...this.props}))())
+				(_q) => { _q._fetchInterval() && _q.autoFetch(() => ({...this.props}))() })
 		}
 
 		isFetching () {
@@ -68,7 +68,7 @@ export default function createContainer (Queries, Component, endPoint) {
 
 		componentDidMount () {
 			forEach(this.QueryObejcts,
-				(_q) => _q._autoFetch && !_q._fetchInterval() && _q.fetch({...this.props}))
+				(_q) => { _q._autoFetch && !_q._fetchInterval() && _q.fetch({...this.props}) })
 			this.autoFetch()
 		}
 

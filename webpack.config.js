@@ -1,5 +1,4 @@
 var webpack = require('webpack')
-var CopyPlugin = require('copy-webpack-plugin')
 var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin
 var path = require('path')
 var env = require('yargs').argv.mode
@@ -7,7 +6,7 @@ var env = require('yargs').argv.mode
 var libraryName = 'react-fgql'
 
 var plugins = []
-var outputFile
+var outputFile = libraryName + '.js'
 
 if (env === 'build') {
 	plugins.push(new UglifyJsPlugin({ minimize: true }))
